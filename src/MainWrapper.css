@@ -3,3 +3,7 @@
     height: 100vh;
     background-color: black;
 }
+
+.wrapper p {
+    color: white;
+}
