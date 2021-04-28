@@ -1,5 +1,6 @@
 import React from "react";
-import "./MainWrapper.css";
+
+import HomeDesktop from "./components/desktop/Home";
 
 interface MainWrapperProps {}
 
@@ -34,9 +35,7 @@ class MainWrapper extends React.Component<MainWrapperProps, MainWrapperState> {
                         <p>Mobile</p>
                     </div>
                 ) : (
-                    <div>
-                        <p>Desktop</p>
-                    </div>
+                    <HomeDesktop />
                 )}
             </div>
         );
