@@ -1,9 +1,5 @@
 .wrapper {
     width: 100%;
-    height: 100vh;
-    background-color: black;
-}
-
-.wrapper p {
-    color: white;
+    min-height: 100vh;
+    background-color: var(--main-color);
 }

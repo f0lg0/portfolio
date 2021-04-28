@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --main-color: #0c0e0c;
+    --secondary-color: #191919;
+    --accent-color: #5a92e1;
+}
+
 .App {
-    text-align: center;
+    font-family: "Poppins", sans-serif, Helvetica;
+    color: #f2f2f2;
 }
