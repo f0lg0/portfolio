@@ -4,4 +4,107 @@
     background-color: var(--secondary-color);
 
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_wrapper {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 1600px;
+    width: 90%;
+}
+
+.text_region {
+    flex: 0.7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_wrapper {
+    width: 90%;
+}
+
+.text_wrapper div {
+    margin-left: 10%;
+}
+.logo_region {
+    flex: 0.3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.title span {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}
+
+.subtitle h2 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.subtitle span {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.small_text {
+    margin-bottom: 20px;
+}
+
+.small_text p {
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.main_btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: var(--accent-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.main_btn p {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+    .title h1 {
+        font-size: 46px;
+    }
+
+    .subtitle h2 {
+        font-size: 28px;
+    }
+
+    .small_text p {
+        font-size: 18px;
+    }
 }

@@ -22,7 +22,7 @@
 }
 .main_text a {
     font-weight: 300;
-    color: #f2f2f2;
+    color: var(--main-font-color);
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@
 .links a {
     margin: auto;
     text-decoration: none;
-    color: #f2f2f2;
+    color: var(--main-font-color);
 }
 
 .links a:hover {
@@ -85,14 +85,17 @@
 }
 
 .social .icon svg {
-    fill: #f2f2f2;
+    fill: var(--main-font-color);
 }
 
 .social .name a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: var(--main-font-color);
 }
-
+.social .name a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+}
 .email {
     display: flex;
     align-items: center;
