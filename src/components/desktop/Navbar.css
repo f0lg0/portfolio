@@ -17,10 +17,13 @@
     display: flex;
     align-items: center;
 
-    border: 1px solid red;
+    margin-left: 5%;
+    cursor: pointer;
 }
-.main_text p {
+.main_text a {
     font-weight: 300;
+    color: #f2f2f2;
+    text-decoration: none;
 }
 
 .main_text span {
@@ -33,9 +36,9 @@
     flex: 0.4;
     align-items: center;
     justify-content: space-between;
-
-    border: 1px solid green;
     margin-left: 50px;
+
+    max-width: 650px;
 }
 
 .link {
@@ -49,4 +52,51 @@
     margin: auto;
     text-decoration: none;
     color: #f2f2f2;
+}
+
+.links a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.socials {
+    flex: 0.6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+
+    max-width: 900px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0.2;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.social .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.social .icon svg {
+    fill: #f2f2f2;
+}
+
+.social .name a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+
+    cursor: pointer;
 }
