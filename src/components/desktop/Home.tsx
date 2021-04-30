@@ -3,6 +3,7 @@ import "./Home.css";
 
 import Navbar from "./Navbar";
 import Banner from "./Banner";
+import BodySection from "./BodySection";
 
 interface HomeProps {}
 interface HomeState {}
@@ -18,6 +19,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             <div className="home">
                 <Navbar />
                 <Banner />
+                <BodySection />
             </div>
         );
     }

@@ -1,0 +1,45 @@
+.body_section {
+    max-width: 1200px;
+    width: 80%;
+
+    /* todo: remove */
+    height: 100vh;
+
+    margin: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_section {
+    text-align: center;
+    width: 65%;
+
+    margin-top: 80px;
+}
+
+.about_section h2,
+.projects_section h2 {
+    font-size: 60px;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background: var(--accent-color);
+
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.projects_section {
+    width: 65%;
+    margin-top: 200px;
+}
+
+.projects_section h2 {
+    text-align: center;
+}

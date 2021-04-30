@@ -10,6 +10,11 @@
     --main-font-color: #f2f2f2;
 }
 
+html {
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
 .App {
     font-family: "Poppins", sans-serif, Helvetica;
     color: #f2f2f2;
