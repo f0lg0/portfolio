@@ -2,9 +2,6 @@
     max-width: 1200px;
     width: 80%;
 
-    /* todo: remove */
-    height: 100vh;
-
     margin: auto;
     margin-top: 50px;
 
@@ -42,4 +39,10 @@
 
 .projects_section h2 {
     text-align: center;
+}
+
+.projects_container {
+    width: 100%;
+
+    margin-top: 80px;
 }

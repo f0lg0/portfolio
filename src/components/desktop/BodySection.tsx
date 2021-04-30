@@ -1,6 +1,8 @@
 import React from "react";
 import "./BodySection.css";
 
+import ProjectCard from "../ProjectCard";
+
 interface BodyProps {}
 interface BodyState {}
 
@@ -25,6 +27,12 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                 <div className="projects_section" id="Projects">
                     <h2>Projects</h2>
                     <div className="line"></div>
+
+                    <div className="projects_container">
+                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
+                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
+                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
+                    </div>
                 </div>
             </div>
         );
