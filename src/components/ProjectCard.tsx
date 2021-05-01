@@ -10,13 +10,17 @@ interface CardProps {
 interface CardState {}
 
 class ProjectCard extends React.Component<CardProps, CardState> {
+    private cardRef: React.RefObject<HTMLDivElement>;
+
     constructor(props: CardProps) {
         super(props);
         this.state = {};
+
+        this.cardRef = React.createRef();
     }
 
     render() {
-        return <div className="card"></div>;
+        return <div className="card" ref={this.cardRef}></div>;
     }
 }
 

@@ -15,6 +15,11 @@ html {
     transition: 0.3s;
 }
 
+::selection {
+    color: var(--main-color);
+    background-color: var(--main-font-color);
+}
+
 .App {
     font-family: "Poppins", sans-serif, Helvetica;
     color: #f2f2f2;
