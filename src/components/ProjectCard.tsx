@@ -20,7 +20,14 @@ class ProjectCard extends React.Component<CardProps, CardState> {
     }
 
     render() {
-        return <div className="card" ref={this.cardRef}></div>;
+        return (
+            <div className="card" ref={this.cardRef}>
+                <div className="content_wrapper">
+                    <div className="details"></div>
+                    <div className="thumbnail"></div>
+                </div>
+            </div>
+        );
     }
 }
 
