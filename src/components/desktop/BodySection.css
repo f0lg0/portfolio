@@ -33,7 +33,7 @@
 }
 
 .projects_section {
-    width: 65%;
+    width: 69%;
     margin-top: 200px;
 }
 
@@ -42,7 +42,8 @@
 }
 
 .projects_container {
+    max-width: 600px;
     width: 100%;
-
+    margin: auto;
     margin-top: 80px;
 }

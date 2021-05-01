@@ -29,7 +29,9 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                         <h4 className={this.props.language.toLowerCase()}>{this.props.language}</h4>
                         <p>{this.props.description}</p>
                     </div>
-                    <div className="thumbnail"></div>
+                    <div className="thumbnail">
+                        <img src={this.props.img_path} />
+                    </div>
                 </div>
             </div>
         );
