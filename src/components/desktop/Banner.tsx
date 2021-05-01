@@ -10,6 +10,10 @@ class Banner extends React.Component<BannerProps, BannerState> {
         this.state = {};
     }
 
+    routeToProjects() {
+        window.location.href = "/#Projects";
+    }
+
     render() {
         return (
             <div className="banner">
@@ -29,7 +33,7 @@ class Banner extends React.Component<BannerProps, BannerState> {
                             <div className="small_text">
                                 <p>Stick around to see my work</p>
                             </div>
-                            <div className="main_btn">
+                            <div className="main_btn" onClick={this.routeToProjects}>
                                 <p>See my work</p>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         return (
             <div className="navbar">
                 <div className="main_text">
-                    <a href="/">
+                    <a href="/#">
                         <span>Folgoni</span> Leonardo
                     </a>
                 </div>

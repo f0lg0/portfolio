@@ -4,8 +4,10 @@
 
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(42px);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    -webkit-backdrop-filter: blur(42px);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
 
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 16px;
     margin-bottom: 50px;
 
@@ -13,6 +15,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .content_wrapper {
     display: flex;
     flex-direction: row;
@@ -24,11 +27,37 @@
 .details {
     flex: 0.7;
     height: 100%;
-    background-color: red;
+}
+
+.details h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.details h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-weight: 300;
+}
+
+.javascript {
+    color: #f7df1e;
+}
+
+.python {
+    color: #3572a5;
+}
+
+.c {
+    color: #a7b9cc;
 }
 
 .thumbnail {
     flex: 0.3;
     height: 100%;
-    background-color: blue;
+    border: 1px solid black;
 }

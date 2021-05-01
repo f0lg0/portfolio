@@ -3,7 +3,8 @@ import "./ProjectCard.css";
 
 interface CardProps {
     title: string;
-    subtitle: string;
+    language: string;
+    description: string;
     img_path: string;
 }
 
@@ -23,7 +24,11 @@ class ProjectCard extends React.Component<CardProps, CardState> {
         return (
             <div className="card" ref={this.cardRef}>
                 <div className="content_wrapper">
-                    <div className="details"></div>
+                    <div className="details">
+                        <h3>{this.props.title}</h3>
+                        <h4 className={this.props.language.toLowerCase()}>{this.props.language}</h4>
+                        <p>{this.props.description}</p>
+                    </div>
                     <div className="thumbnail"></div>
                 </div>
             </div>

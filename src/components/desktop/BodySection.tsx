@@ -29,9 +29,9 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                     <div className="line"></div>
 
                     <div className="projects_container">
-                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
-                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
-                        <ProjectCard title="Testing" subtitle="Lorem ipsum" img_path="none" />
+                        <ProjectCard title="Testing" language="Javascript" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." img_path="none" />
+                        <ProjectCard title="Testing" language="C" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." img_path="none" />
+                        <ProjectCard title="Testing" language="Python" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." img_path="none" />
                     </div>
                 </div>
             </div>
