@@ -30,7 +30,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                         <p>{this.props.description}</p>
                     </div>
                     <div className="thumbnail">
-                        <img src={this.props.img_path} />
+                        <img src={this.props.img_path} alt="project thumbnail" />
                     </div>
                 </div>
                 {/* <div className="expand_icon">

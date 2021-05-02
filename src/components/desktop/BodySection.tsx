@@ -38,6 +38,12 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                         />
                         <ProjectCard title="Oncogene" language="Python" description="A Windows/Linux RAT written using TCP sockets." img_path="./assets/oncogene.png" />
                         <ProjectCard title="DevsBunker" language="Javascript" description="A platform where developers can promote their work for free." img_path="" />
+                        <ProjectCard
+                            title="StopCovid"
+                            language="VueJS"
+                            description="A website to track and analyze Covid-19 in Italy"
+                            img_path="https://weekly-covid-stats.vercel.app/img/logo.d1688faa.jpeg"
+                        />
                     </div>
                 </div>
             </div>
