@@ -1,11 +1,18 @@
 import React from "react";
 import "./ProjectCard.css";
 
+type TechDetailsObject = {
+    key: string;
+    val: string;
+};
+
 interface CardProps {
     title: string;
     language: string;
     description: string;
     img_path: string;
+    expanded_content?: string;
+    techDetails?: Array<TechDetailsObject>;
 }
 
 interface CardState {
@@ -26,11 +33,24 @@ class ProjectCard extends React.Component<CardProps, CardState> {
 
     render() {
         let expanded = undefined;
+        let techDetails = [];
 
         if (this.state.expanded) {
+            if (this.props.techDetails) {
+                for (let i = 0; i < this.props.techDetails.length; i++) {
+                    techDetails.push(
+                        <p>
+                            <span>{this.props.techDetails[i].key}:</span> {this.props.techDetails[i].val}
+                        </p>
+                    );
+                }
+            }
             expanded = (
-                <div className="expanded_content">
-                    <p>This is some dummy text that will be visible only when the user expands the card</p>
+                <div className="expanded_wrapper">
+                    <div className="expanded_content">
+                        <p>{this.props.expanded_content}</p>
+                        <div className="tech_details">{techDetails}</div>
+                    </div>
                 </div>
             );
         }

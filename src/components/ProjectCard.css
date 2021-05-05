@@ -58,9 +58,21 @@
     cursor: pointer;
 }
 
-.expanded_content {
+.expanded_wrapper {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech_details {
+    margin-top: 30px;
+}
+
+.tech_details span {
+    font-weight: bold;
 }
 
 .details {

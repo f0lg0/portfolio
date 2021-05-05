@@ -29,7 +29,17 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                     <div className="line"></div>
 
                     <div className="projects_container">
-                        <ProjectCard title="CapiHub" language="Typescript" description="A platform where students can share their school work." img_path="./assets/capihub.png" />
+                        <ProjectCard
+                            title="CapiHub"
+                            language="Typescript"
+                            description="A platform where students can share their school work."
+                            img_path="./assets/capihub.png"
+                            expanded_content="Built for students by students, CapiHub is a non-profit, free and community driven project born in collaboration with my high school. On this platform, students share their notes and other school material in order to build a powerful archive for future generations."
+                            techDetails={[
+                                { key: "Tech stack", val: "NodeJS with TypeScript and GraphQL for the backend and  Vue.js for the frontend." },
+                                { key: "Status", val: "Inactive" },
+                            ]}
+                        />
                         <ProjectCard
                             title="CHIP-8 Emulator"
                             language="C"
