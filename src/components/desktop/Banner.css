@@ -40,6 +40,11 @@
     justify-content: center;
 }
 
+.logo_region img {
+    width: 365px;
+    height: 365px;
+}
+
 .title {
     margin-bottom: 15px;
 }

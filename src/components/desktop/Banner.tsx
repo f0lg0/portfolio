@@ -39,10 +39,7 @@ class Banner extends React.Component<BannerProps, BannerState> {
                         </div>
                     </div>
                     <div className="logo_region">
-                        <svg width="166" height="202" viewBox="0 0 166 202" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.95148 60.3V77.25H53.6015V104.1H20.1515V120.75H53.6015V165H74.6015V60.3H9.95148Z" fill="#F2F2F2" />
-                            <path d="M112.398 148.35H146.898V165H91.3985V60.3H112.398V148.35Z" fill="#5A92E1" />
-                        </svg>
+                        <img src="./assets/logo.png" alt="FL LOGO" />
                     </div>
                 </div>
             </div>
