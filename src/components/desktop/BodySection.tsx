@@ -39,6 +39,7 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                                 { key: "Tech stack", val: "NodeJS with TypeScript and GraphQL for the backend and  Vue.js for the frontend." },
                                 { key: "Status", val: "Inactive" },
                             ]}
+                            github="https://github.com/capihub/"
                         />
                         <ProjectCard
                             title="CHIP-8 Emulator"

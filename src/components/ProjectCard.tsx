@@ -13,6 +13,7 @@ interface CardProps {
     img_path: string;
     expanded_content?: string;
     techDetails?: Array<TechDetailsObject>;
+    github?: string;
 }
 
 interface CardState {
@@ -33,6 +34,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
 
     render() {
         let expanded = undefined;
+        let githubLink = undefined;
         let techDetails = [];
 
         if (this.state.expanded) {
@@ -44,6 +46,17 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                         </p>
                     );
                 }
+            }
+            if (this.props.github) {
+                githubLink = (
+                    <div className="github_container">
+                        <div className="github_wrapper">
+                            <a href={this.props.github} target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/github_logo_64.png" alt="github logo" />
+                            </a>
+                        </div>
+                    </div>
+                );
             }
             expanded = (
                 <div className="expanded_wrapper">
@@ -69,6 +82,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                         </div>
                     </div>
                     {expanded}
+                    {githubLink}
                     <div
                         className="expand_icon"
                         onClick={() => {
