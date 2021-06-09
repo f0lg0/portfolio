@@ -64,6 +64,9 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                             language="VueJS"
                             description="A website to track and analyze Covid-19 in Italy"
                             img_path="https://weekly-covid-stats.vercel.app/img/logo.d1688faa.jpeg"
+                            expanded_content="Built in collaboration with my highschool, StopCovid is a platform where you can easily take a look at raw Covid19 data from a simple and intuitive UI. There's also a YouTube channel ran by my professor where we analyze the numbers. This website is in Italian."
+                            techDetails={[{ key: "Tech stack", val: "Vue.js 2"}, { key: "Status", val: "Active"}, { key: "Link", val: "https://weekly-covid-stats.vercel.app/#/"}]}
+                            github="https://github.com/f0lg0/stopcovid-website"
                         />
                     </div>
                 </div>

@@ -26,7 +26,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                         <a href="#Projects">Projects</a>
                     </div>
                     <div className="link">
-                        <a href="#Contact">Contact</a>
+                        <a href="#Blog">Blog</a>
                     </div>
                 </div>
                 <div className="socials">
