@@ -32,4 +32,50 @@
 .right {
     width: calc(100% - 275px);
     height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.made_with {
+    height: 100%;
+    width: 335px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.child {
+    flex: 0.8;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.child a {
+    color: var(--soft-text);
+    font-weight: 200;
+    text-decoration: none;
+}
+.child a:hover {
+    color: var(--main-font-color);
+    transition: 0.3s;
+}
+
+.react_wrapper {
+    flex: 0.2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react_wrapper img {
+    width: 70%;
+    height: 50%;
 }
