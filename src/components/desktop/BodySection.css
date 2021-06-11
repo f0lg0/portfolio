@@ -27,7 +27,8 @@
 
 .about_section h2,
 .projects_section h2,
-.tech h2 {
+.tech h2,
+.thanks h2 {
     font-size: 60px;
     text-align: center;
 }
@@ -98,4 +99,18 @@
 .lang img {
     width: 100%;
     height: 100%;
+}
+
+.thanks {
+    margin-top: 180px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.thanks p {
+    font-weight: 300;
+    font-size: 18px;
+
+    text-align: center;
 }

@@ -139,8 +139,30 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                                     alt="Linux"
                                 />
                             </div>
+                            <div className="lang">
+                                <img src="./assets/react.png" alt="React" />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F95%2FVue.js_Logo_2.svg%2F1200px-Vue.js_Logo_2.svg.png&f=1&nofb=1"
+                                    alt="VueJS"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F9f%2FVimlogo.svg%2F1200px-Vimlogo.svg.png&f=1&nofb=1"
+                                    alt="Vim"
+                                />
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="thanks" id="Thanks">
+                    <h2>Thanks</h2>
+                    <div className="line"></div>
+
+                    <p>Thanks kind stranger for visiting my site, feel free to contact me if you have any questions.</p>
                 </div>
             </div>
         );
