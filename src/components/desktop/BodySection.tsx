@@ -79,6 +79,69 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                         />
                     </div>
                 </div>
+
+                <div className="tech" id="Tech">
+                    <h2>Skills</h2>
+                    <div className="line"></div>
+
+                    <div className="languages">
+                        <p>Technologies I've worked with</p>
+
+                        <div className="lang_grid">
+                            <div className="lang">
+                                <img src="https://www.rust-lang.org/logos/rust-logo-256x256.png" alt="Rust" />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Fletter_c%2Fletter_c_PNG22.png&f=1&nofb=1"
+                                    alt="C"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                                    alt="Javascript"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F4c%2FTypescript_logo_2020.svg%2F1200px-Typescript_logo_2020.svg.png&f=1&nofb=1"
+                                    alt="Typescript"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F10%2FPython_logo_icon.png&f=1&nofb=1"
+                                    alt="Python"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdwglogo.com%2Fwp-content%2Fuploads%2F2017%2F12%2FMongoDB_logo_01.png&f=1&nofb=1"
+                                    alt="MongoDB"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F17%2FGraphQL_Logo.svg%2F1200px-GraphQL_Logo.svg.png&f=1&nofb=1"
+                                    alt="GraphQL"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fnodejs-png-nodejs-icon-png-50-px-1600.png&f=1&nofb=1"
+                                    alt="NodeJS"
+                                />
+                            </div>
+                            <div className="lang">
+                                <img
+                                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2014%2F10%2FLinux-logo.png&f=1&nofb=1"
+                                    alt="Linux"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

@@ -11,7 +11,6 @@
 }
 
 .about_section {
-    text-align: center;
     width: 65%;
 
     margin-top: 80px;
@@ -27,8 +26,10 @@
 }
 
 .about_section h2,
-.projects_section h2 {
+.projects_section h2,
+.tech h2 {
     font-size: 60px;
+    text-align: center;
 }
 
 .line {
@@ -55,4 +56,46 @@
     width: 100%;
     margin: auto;
     margin-top: 80px;
+}
+
+.tech {
+    margin-top: 130px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.languages {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.languages p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--soft-text);
+}
+
+.lang_grid {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lang {
+    width: 100px;
+    height: 100px;
+
+    margin: 20px;
+}
+
+.lang img {
+    width: 100%;
+    height: 100%;
 }
