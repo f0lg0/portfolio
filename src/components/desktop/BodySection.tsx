@@ -19,8 +19,13 @@ class BodySection extends React.Component<BodyProps, BodyState> {
                     <h2>About</h2>
                     <div className="line"></div>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        I'm a senior highschool student interested in computer science. My skills range from making websites and related infrastructures to
+                        system programming. I have knowledge in the Linux environment and I like to experiment and study new things every day.
+                    </p>
+
+                    <p>
+                        I'm based in Italy but I know English quite well thanks to some experience. I normally code alone but I have partecipated in multiple
+                        team projects, some of them are still a work in progress.
                     </p>
                 </div>
 

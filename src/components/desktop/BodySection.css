@@ -17,6 +17,15 @@
     margin-top: 80px;
 }
 
+.about_section p {
+    line-height: 1.7em;
+    text-align: justify;
+    font-size: 18px;
+
+    margin-top: 40px;
+    font-weight: 300;
+}
+
 .about_section h2,
 .projects_section h2 {
     font-size: 60px;
