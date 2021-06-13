@@ -61,6 +61,17 @@
     transition: 0.3s;
 }
 
+.special_link a {
+    color: var(--soft-text);
+    opacity: 0.5;
+}
+
+.special_link a:hover {
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: var(--soft-text);
+}
+
 .socials {
     flex: 0.6;
     display: flex;
@@ -104,4 +115,14 @@
     margin-right: 10%;
 
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email_link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
