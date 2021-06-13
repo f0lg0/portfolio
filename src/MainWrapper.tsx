@@ -32,19 +32,7 @@ class MainWrapper extends React.Component<MainWrapperProps, MainWrapperState> {
     }
 
     render() {
-        if (this.state.isMobile) {
-            return (
-                <div className="wrapper">
-                    <HomeMobile />
-                </div>
-            );
-        } else {
-            return (
-                <div className="wrapper">
-                    <HomeDesktop />
-                </div>
-            );
-        }
+        return <div className="wrapper">{this.state.isMobile ? <HomeMobile /> : <HomeDesktop />}</div>;
     }
 }
 
