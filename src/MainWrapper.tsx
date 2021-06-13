@@ -1,6 +1,8 @@
+import { directive } from "@babel/types";
 import React from "react";
 
 import HomeDesktop from "./components/desktop/Home";
+import HomeMobile from "./components/mobile/Home";
 
 interface MainWrapperProps {}
 
@@ -17,10 +19,12 @@ class MainWrapper extends React.Component<MainWrapperProps, MainWrapperState> {
 
     checkScreenSize() {
         const screenWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        console.log(screenWidth <= 760 ? true : false);
 
         this.setState({ isMobile: screenWidth <= 760 ? true : false });
     }
     componentDidMount() {
+        this.checkScreenSize();
         window.addEventListener("resize", this.checkScreenSize);
     }
     componentWillUnmount() {
@@ -28,17 +32,19 @@ class MainWrapper extends React.Component<MainWrapperProps, MainWrapperState> {
     }
 
     render() {
-        return (
-            <div className="wrapper">
-                {this.state.isMobile ? (
-                    <div>
-                        <p>Mobile</p>
-                    </div>
-                ) : (
+        if (this.state.isMobile) {
+            return (
+                <div className="wrapper">
+                    <HomeMobile />
+                </div>
+            );
+        } else {
+            return (
+                <div className="wrapper">
                     <HomeDesktop />
-                )}
-            </div>
-        );
+                </div>
+            );
+        }
     }
 }
 
