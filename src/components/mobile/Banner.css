@@ -1,0 +1,72 @@
+.banner_mobile {
+    height: calc(100vh - 65px);
+    width: 95%;
+    margin: auto;
+}
+
+.big_logo {
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_logo img {
+    width: 90%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fade-in-image {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.intro {
+    width: 80%;
+    height: 40%;
+    border: 1px solid red;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_bar {
+    width: 90%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.side_line {
+    height: 2px;
+    flex: 0.7;
+    background-color: var(--main-font-color);
+}
+
+.name {
+    flex: 0.4;
+    margin-left: 20px;
+
+    color: var(--main-font-color);
+    font-size: 18px;
+    font-weight: 800;
+}
