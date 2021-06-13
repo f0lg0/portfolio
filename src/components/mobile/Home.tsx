@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 
+import Navbar from "./Navbar";
+
 interface HomeProps {}
 interface HomeState {}
 
@@ -11,7 +13,11 @@ class Home extends React.Component<HomeProps, HomeState> {
     }
 
     render() {
-        return <div className="home_mobile"></div>;
+        return (
+            <div className="home_mobile">
+                <Navbar />
+            </div>
+        );
     }
 }
 export default Home;
