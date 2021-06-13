@@ -18,7 +18,6 @@ class MainWrapper extends React.Component<MainWrapperProps, MainWrapperState> {
 
     checkScreenSize() {
         const screenWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-        console.log(screenWidth <= 760 ? true : false);
 
         this.setState({ isMobile: screenWidth <= 760 ? true : false });
     }

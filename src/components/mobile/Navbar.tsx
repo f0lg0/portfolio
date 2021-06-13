@@ -12,6 +12,12 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         this.state = {
             open: false,
         };
+
+        this.toggleBurger = this.toggleBurger.bind(this);
+    }
+
+    toggleBurger() {
+        this.setState({ open: !this.state.open });
     }
 
     render() {
@@ -19,12 +25,14 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
             <div className="navbar_mobile">
                 <div className="nav_wrapper">
                     <div className="left_nav">
-                        <div className="logo_wrapper">
-                            <img src="./assets/logo.png" alt="LF" />
-                        </div>
+                        <a href="/#">
+                            <div className="logo_wrapper">
+                                <img src="./assets/logo.png" alt="LF" />
+                            </div>
+                        </a>
                     </div>
                     <div className="right_nav">
-                        <div className="burger_menu">
+                        <div className="burger_menu" onClick={this.toggleBurger}>
                             <div className="bline"></div>
                             <div className="bline"></div>
                         </div>
