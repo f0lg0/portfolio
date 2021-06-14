@@ -19,7 +19,7 @@ class Banner extends React.Component<BannerProps, BannerState> {
                 <div className="intro">
                     <div className="top_bar">
                         <div className="side_line"></div>
-                        <div className="name">
+                        <div className="myname">
                             <p>Leonardo Folgoni</p>
                         </div>
                     </div>
