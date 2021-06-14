@@ -5,8 +5,11 @@
 }
 
 .big_logo {
-    height: 60%;
+    height: 50%;
+    max-height: 430px;
+    max-width: 504px;
     width: 100%;
+    margin: auto;
 
     display: flex;
     align-items: center;
@@ -28,17 +31,13 @@
 }
 .fade-in-image {
     animation: fadeIn 3s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
 }
 
 .intro {
     width: 80%;
     height: 40%;
-    border: 1px solid red;
     margin: auto;
+    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
@@ -58,15 +57,82 @@
 
 .side_line {
     height: 2px;
-    flex: 0.7;
+    width: calc(100% - 180px);
     background-color: var(--main-font-color);
 }
 
 .myname {
-    flex: 0.4;
+    width: 160px;
     margin-left: 20px;
 
     color: var(--main-font-color);
     font-size: 18px;
     font-weight: 800;
+}
+
+.intro_text {
+    width: 90%;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.intro_text h1 {
+    font-weight: 400;
+}
+
+.intro_text h1 span {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.intro_text p {
+    font-weight: 300;
+}
+
+.arrow_wrapper {
+    position: relative;
+    margin-top: 100px;
+}
+
+.arrow,
+.arrow:before {
+    position: absolute;
+    left: 50%;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    transform: rotate(45deg);
+}
+
+.arrow:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
 }

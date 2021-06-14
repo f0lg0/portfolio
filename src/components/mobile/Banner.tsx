@@ -23,6 +23,16 @@ class Banner extends React.Component<BannerProps, BannerState> {
                             <p>Leonardo Folgoni</p>
                         </div>
                     </div>
+                    <div className="intro_text">
+                        <h1>
+                            I'm <span>f0lg0</span>,
+                        </h1>
+                        <p>a self taught software developer.</p>
+                    </div>
+
+                    <div className="arrow_wrapper">
+                        <div className="arrow"></div>
+                    </div>
                 </div>
             </div>
         );
