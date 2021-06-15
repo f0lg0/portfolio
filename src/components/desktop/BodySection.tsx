@@ -1,7 +1,7 @@
 import React from "react";
 import "./BodySection.css";
 
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 interface BodyProps {}
 interface BodyState {}
