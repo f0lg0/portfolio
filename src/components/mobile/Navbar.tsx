@@ -32,6 +32,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                         </a>
                     </div>
                     <div className="right_nav">
+                        <div className="spacer_chrome"></div>
                         <div className="burger_menu" onClick={this.toggleBurger}>
                             <div className="bline"></div>
                             <div className="bline"></div>
