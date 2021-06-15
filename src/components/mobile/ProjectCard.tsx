@@ -16,7 +16,14 @@ class ProjectCard extends React.Component<ProjectCardProps, ProjectCardState> {
     }
 
     render() {
-        return <div className="projectcard_mobile"></div>;
+        return (
+            <div className="projectcard_mobile">
+                <p className="language_mobile"></p>
+                <h1 className="title_mobile"></h1>
+                <p className="description_mobile"></p>
+                <div className="github_mobile"></div>
+            </div>
+        );
     }
 }
 
