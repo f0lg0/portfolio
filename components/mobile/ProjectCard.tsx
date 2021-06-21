@@ -23,6 +23,7 @@ class ProjectCard extends React.Component<ProjectCardProps, ProjectCardState> {
     }
 
     async componentDidMount() {
+        console.log("CALLED");
         try {
             const res = await fetch(`${this.props.github}`);
             const repo = await res.json();

@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "../../styles/Navbar.Mobile.module.css";
 
-interface NavbarProps {}
+interface NavbarProps {
+    onOpen: (open: boolean) => void;
+}
 interface NavbarState {
     open: boolean;
 }
@@ -18,6 +20,13 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
     toggleBurger() {
         this.setState({ open: !this.state.open });
+        this.props.onOpen(!this.state.open);
+    }
+
+    getScreenHeightNoScroll() {
+        return {
+            height: window.innerHeight,
+        };
     }
 
     render() {
@@ -37,6 +46,10 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                             <div className={styles.bline}></div>
                             <div className={styles.bline}></div>
                         </div>
+
+                        {this.state.open ? (
+                            <div className={styles.burger_content} style={this.getScreenHeightNoScroll()} onClick={this.toggleBurger}></div>
+                        ) : null}
                     </div>
                 </div>
             </div>

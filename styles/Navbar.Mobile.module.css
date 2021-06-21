@@ -1,3 +1,11 @@
+@keyframes burger_animation {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100%;
+    }
+}
 .navbar_mobile {
     background-color: var(--secondary-color);
     height: 64px;
@@ -75,4 +83,13 @@
     background-color: white;
     height: 2px;
     width: 30px;
+}
+
+.burger_content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-color);
 }
