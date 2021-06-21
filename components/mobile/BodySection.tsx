@@ -119,6 +119,11 @@ export default function BodySection() {
                     />
                 </div>
             </div>
+
+            <div className={styles.thanks}>
+                <h2>Thanks</h2>
+                <p>Thanks kind stranger for visiting my site, feel free to contact me if you have any questions.</p>
+            </div>
         </div>
     );
 }

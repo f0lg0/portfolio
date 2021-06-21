@@ -31,7 +31,8 @@
 
 .projects_container_mobile h2,
 .about_section h2,
-.skills_header {
+.skills_header,
+.thanks h2 {
     font-weight: 800;
     font-size: 50px;
     text-align: center;
@@ -60,4 +61,20 @@
 .skill img {
     width: 100%;
     height: 100%;
+}
+
+.thanks {
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.thanks h2 {
+    margin-bottom: 40px;
+}
+
+.thanks p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
 }
