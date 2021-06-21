@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectCard.css";
+import styles from "../../styles/Project.Card.Mobile.module.css";
 
 interface ProjectCardProps {
     title: String;
@@ -17,11 +17,11 @@ class ProjectCard extends React.Component<ProjectCardProps, ProjectCardState> {
 
     render() {
         return (
-            <div className="projectcard_mobile">
-                <p className="language_mobile"></p>
-                <h1 className="title_mobile"></h1>
-                <p className="description_mobile"></p>
-                <div className="github_mobile"></div>
+            <div className={styles.projectcard_mobile}>
+                <p className={styles.language_mobile}></p>
+                <h1 className={styles.title_mobile}></h1>
+                <p className={styles.description_mobile}></p>
+                <div className={styles.github_mobile}></div>
             </div>
         );
     }

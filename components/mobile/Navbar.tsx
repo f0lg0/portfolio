@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import styles from "../../styles/Navbar.Mobile.module.css";
 
 interface NavbarProps {}
 interface NavbarState {
@@ -22,20 +22,20 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
     render() {
         return (
-            <div className="navbar_mobile">
-                <div className="nav_wrapper">
-                    <div className="left_nav">
+            <div className={styles.navbar_mobile}>
+                <div className={styles.nav_wrapper}>
+                    <div className={styles.left_nav}>
                         <a href="/#">
-                            <div className="logo_wrapper">
-                                <img src="./assets/logo.png" alt="LF" />
+                            <div className={styles.logo_wrapper}>
+                                <img src="/logo.png" alt="LF" />
                             </div>
                         </a>
                     </div>
-                    <div className="right_nav">
-                        <div className="spacer_chrome"></div>
-                        <div className="burger_menu" onClick={this.toggleBurger}>
-                            <div className="bline"></div>
-                            <div className="bline"></div>
+                    <div className={styles.right_nav}>
+                        <div className={styles.spacer_chrome}></div>
+                        <div className={styles.burger_menu} onClick={this.toggleBurger}>
+                            <div className={styles.bline}></div>
+                            <div className={styles.bline}></div>
                         </div>
                     </div>
                 </div>

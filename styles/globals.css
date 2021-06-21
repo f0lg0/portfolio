@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,9 @@
 }
 
 html {
+    font-family: "Poppins", sans-serif, Helvetica;
+    color: var(--main-font-color);
+    background-color: var(--main-color);
     scroll-behavior: smooth;
     transition: 0.3s;
 }
@@ -19,9 +24,4 @@ html {
 ::selection {
     color: var(--main-color);
     background-color: var(--main-font-color);
-}
-
-.App {
-    font-family: "Poppins", sans-serif, Helvetica;
-    color: #f2f2f2;
 }

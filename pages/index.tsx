@@ -1,7 +1,6 @@
+import HomeDesktop from "../components/desktop/Home";
+import HomeMobile from "../components/mobile/Home";
 import React from "react";
-
-import HomeDesktop from "./components/desktop/Home";
-import HomeMobile from "./components/mobile/Home";
 
 interface MainWrapperProps {}
 

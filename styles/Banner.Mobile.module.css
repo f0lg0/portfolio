@@ -39,7 +39,7 @@
         opacity: 1;
     }
 }
-.fade-in-image {
+.fade_in_image {
     animation: fadeIn 3s;
 }
 
