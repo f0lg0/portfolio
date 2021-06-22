@@ -131,7 +131,7 @@
 .links_container {
     width: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .links_container p {
@@ -148,7 +148,7 @@
     color: var(--main-font-color);
 }
 
-@media only screen and (max-height: 680px) {
+@media only screen and (max-height: 740px) {
     .links_container {
         margin-top: 40px;
     }
@@ -157,7 +157,7 @@
         margin-bottom: 50px;
     }
 }
-@media only screen and (max-height: 550px) {
+@media only screen and (max-height: 610px) {
     .links_container {
         margin-top: 10px;
     }
@@ -166,9 +166,9 @@
         margin-bottom: 20px;
     }
 }
-@media only screen and (max-height: 400px) {
-    .links_container {
-        display: none;
+@media only screen and (max-height: 490px) {
+    .links_container p {
+        font-size: 30px;
     }
 }
 

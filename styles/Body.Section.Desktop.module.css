@@ -28,7 +28,8 @@
 .about_section h2,
 .projects_section h2,
 .tech h2,
-.thanks h2 {
+.thanks h2,
+.contact h2 {
     font-size: 60px;
     text-align: center;
 }
@@ -101,16 +102,17 @@
     height: 100%;
 }
 
-.thanks {
+.contact {
     margin-top: 180px;
     max-width: 600px;
     width: 100%;
     margin-bottom: 100px;
 }
 
-.thanks p {
-    font-weight: 300;
-    font-size: 18px;
-
+.contact p {
+    color: var(--accent-color);
+    font-size: 30px;
     text-align: center;
+    cursor: pointer;
+    font-weight: 200;
 }

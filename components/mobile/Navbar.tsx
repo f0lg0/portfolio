@@ -78,6 +78,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                                 <div className={styles.links_container}>
                                     <p onClick={() => this.navigateTo("About")}>About</p>
                                     <p onClick={() => this.navigateTo("Projects")}>Projects</p>
+                                    <p onClick={() => this.navigateTo("Contact")}>Contact</p>
                                     <Link href="/blog">
                                         <p>Blog</p>
                                     </Link>

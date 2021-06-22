@@ -32,6 +32,7 @@
 .projects_container_mobile h2,
 .about_section h2,
 .skills_header,
+.contact h2,
 .thanks h2 {
     font-weight: 800;
     font-size: 50px;
@@ -64,18 +65,24 @@
     height: 100%;
 }
 
-.thanks {
+.contact {
     margin: auto;
     margin-top: 150px;
     width: 80%;
 }
 
-.thanks h2 {
+.contact h2 {
     margin-bottom: 40px;
 }
 
-.thanks p {
+.contact p {
     text-align: center;
     font-weight: 200;
     font-size: 18px;
+}
+
+.contact p {
+    cursor: pointer;
+    color: var(--accent-color);
+    font-size: 22px;
 }

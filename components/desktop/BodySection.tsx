@@ -1,6 +1,8 @@
 import styles from "../../styles/Body.Section.Desktop.module.css";
 import ProjectCard from "./ProjectCard";
 
+import Link from "next/link";
+
 export default function BodySection() {
     return (
         <div className={styles.body_section}>
@@ -147,11 +149,13 @@ export default function BodySection() {
                 </div>
             </div>
 
-            <div className={styles.thanks}>
-                <h2>Thanks</h2>
+            <div className={styles.contact}>
+                <h2>Contact</h2>
                 <div className={styles.line}></div>
 
-                <p>Thanks kind stranger for visiting my site, feel free to contact me if you have any questions.</p>
+                <Link href="mailto:folgonileonardo@gmail.com">
+                    <p>folgonileonardo@gmail.com</p>
+                </Link>
             </div>
         </div>
     );

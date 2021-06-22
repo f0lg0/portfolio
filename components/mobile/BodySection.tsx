@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
-
 import styles from "../../styles/Body.Section.Mobile.module.css";
+
+import Link from "next/link";
 
 export default function BodySection() {
     return (
@@ -120,9 +121,12 @@ export default function BodySection() {
                 </div>
             </div>
 
-            <div className={styles.thanks}>
-                <h2>Thanks</h2>
-                <p>Thanks kind stranger for visiting my site, feel free to contact me if you have any questions.</p>
+            <div className={styles.contact} id="Contact">
+                <h2>Contact</h2>
+
+                <Link href="mailto:folgonileonardo@gmail.com">
+                    <p>folgonileonardo@gmail.com</p>
+                </Link>
             </div>
         </div>
     );
