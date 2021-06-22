@@ -148,16 +148,42 @@
     color: var(--main-font-color);
 }
 
+@media only screen and (max-height: 680px) {
+    .links_container {
+        margin-top: 40px;
+    }
+    .links_container p {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-height: 550px) {
+    .links_container {
+        margin-top: 10px;
+    }
+    .links_container p {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-height: 400px) {
+    .links_container {
+        display: none;
+    }
+}
+
 .socials {
     width: 80%;
     height: 100px;
-    margin: auto;
-    margin-top: 80px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 10%;
 }
 
 .social {

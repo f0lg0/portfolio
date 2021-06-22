@@ -42,6 +42,7 @@
 
 .skills {
     width: 90%;
+    max-width: 460px;
 
     margin: auto;
 
