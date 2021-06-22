@@ -6,6 +6,15 @@
         width: 100%;
     }
 }
+@keyframes links_animation {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-bottom: 50px;
+    }
+}
+
 .navbar_mobile {
     background-color: var(--secondary-color);
     height: 64px;
@@ -120,14 +129,21 @@
 }
 
 .links_container {
-    width: 90%;
-    height: 400px;
+    width: 80%;
     margin: auto;
-    margin-top: 70px;
-
-    border: 1px solid red;
+    margin-top: 150px;
 }
 
 .links_container p {
+    animation: links_animation 0.5s;
     cursor: pointer;
+
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: var(--soft-text);
+    transition: 0.3s;
+}
+
+.links_container p:hover {
+    color: var(--main-font-color);
 }
