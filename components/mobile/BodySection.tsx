@@ -5,7 +5,7 @@ import styles from "../../styles/Body.Section.Mobile.module.css";
 export default function BodySection() {
     return (
         <div className={styles.body_mobile}>
-            <div className={styles.about_section}>
+            <div className={styles.about_section} id="About">
                 <h2>About</h2>
                 <p>
                     I'm a senior highschool student interested in computer science. My skills range from making websites and related infrastructures to system
@@ -17,7 +17,7 @@ export default function BodySection() {
                     projects, some of them are still a work in progress.
                 </p>
             </div>
-            <div className={styles.projects_container_mobile}>
+            <div className={styles.projects_container_mobile} id="Projects">
                 <h2>Projects</h2>
 
                 <ProjectCard

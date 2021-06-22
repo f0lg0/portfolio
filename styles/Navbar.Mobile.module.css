@@ -86,10 +86,48 @@
 }
 
 .burger_content {
+    animation: burger_animation 0.5s;
     position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
     right: 0;
     background-color: var(--secondary-color);
+}
+
+.top_menu {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.space {
+    flex: 0.7;
+    height: 100%;
+}
+
+.icon {
+    flex: 0.3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links_container {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    margin-top: 70px;
+
+    border: 1px solid red;
+}
+
+.links_container p {
+    cursor: pointer;
 }

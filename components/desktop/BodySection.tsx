@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 export default function BodySection() {
     return (
         <div className={styles.body_section}>
-            <div className={styles.about_section} id="About">
+            <div className={styles.about_section}>
                 <h2>About</h2>
                 <div className={styles.line}></div>
                 <p>
@@ -18,7 +18,7 @@ export default function BodySection() {
                 </p>
             </div>
 
-            <div className={styles.projects_section} id="Projects">
+            <div className={styles.projects_section}>
                 <h2>Projects</h2>
                 <div className={styles.line}></div>
 
@@ -69,7 +69,7 @@ export default function BodySection() {
                 </div>
             </div>
 
-            <div className={styles.tech} id="Tech">
+            <div className={styles.tech}>
                 <h2>Skills</h2>
                 <div className={styles.line}></div>
 
@@ -147,7 +147,7 @@ export default function BodySection() {
                 </div>
             </div>
 
-            <div className={styles.thanks} id="Thanks">
+            <div className={styles.thanks}>
                 <h2>Thanks</h2>
                 <div className={styles.line}></div>
 

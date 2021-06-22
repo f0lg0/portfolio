@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import styles from "../../styles/Navbar.Mobile.module.css";
 
 interface NavbarProps {
@@ -23,10 +25,13 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         this.props.onOpen(!this.state.open);
     }
 
-    getScreenHeightNoScroll() {
-        return {
-            height: window.innerHeight,
-        };
+    navigateTo(dst: string) {
+        this.setState({ open: !this.state.open });
+        this.props.onOpen(!this.state.open);
+
+        setTimeout(() => {
+            document.getElementById(dst)?.scrollIntoView();
+        }, 300);
     }
 
     render() {
@@ -34,11 +39,11 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
             <div className={styles.navbar_mobile}>
                 <div className={styles.nav_wrapper}>
                     <div className={styles.left_nav}>
-                        <a href="/#">
+                        <Link href="/">
                             <div className={styles.logo_wrapper}>
                                 <img src="/logo.png" alt="LF" />
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.right_nav}>
                         <div className={styles.spacer_chrome}></div>
@@ -48,7 +53,36 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                         </div>
 
                         {this.state.open ? (
-                            <div className={styles.burger_content} style={this.getScreenHeightNoScroll()} onClick={this.toggleBurger}></div>
+                            <div className={styles.burger_content}>
+                                <div className={styles.top_menu}>
+                                    <div className={styles.space}></div>
+                                    <div className={styles.icon} onClick={this.toggleBurger}>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            viewBox="0 0 24 24"
+                                            strokeWidth="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        >
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <line x1="18" y1="6" x2="6" y2="18" />
+                                            <line x1="6" y1="6" x2="18" y2="18" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div className={styles.links_container}>
+                                    <p onClick={() => this.navigateTo("About")}>About</p>
+                                    <p onClick={() => this.navigateTo("Projects")}>Projects</p>
+                                    <Link href="/blog">
+                                        <p>Blog</p>
+                                    </Link>
+                                </div>
+                            </div>
                         ) : null}
                     </div>
                 </div>
