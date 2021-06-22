@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function BodySection() {
     return (
         <div className={styles.body_section}>
-            <div className={styles.about_section}>
+            <div className={styles.about_section} id="About">
                 <h2>About</h2>
                 <div className={styles.line}></div>
                 <p>
@@ -20,7 +20,7 @@ export default function BodySection() {
                 </p>
             </div>
 
-            <div className={styles.projects_section}>
+            <div className={styles.projects_section} id="Projects">
                 <h2>Projects</h2>
                 <div className={styles.line}></div>
 

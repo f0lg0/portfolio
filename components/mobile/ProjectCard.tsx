@@ -41,7 +41,7 @@ class ProjectCard extends React.Component<ProjectCardProps, ProjectCardState> {
 
     render() {
         return (
-            <a href={this.state.url} target="_blank" className={styles.wrapper}>
+            <a href={this.state.url} target="_blank" rel="noreferrer" className={styles.wrapper}>
                 <div className={styles.projectcard_mobile}>
                     <div className={styles.content}>
                         <p className={styles.language}>{this.props.language.toUpperCase()}</p>
