@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/Project.Card.Desktop.module.css";
+import Image from "next/image";
 
 type TechDetailsObject = {
     key: string;
@@ -81,7 +82,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                             <p>{this.props.description}</p>
                         </div>
                         <div className={styles.thumbnail}>
-                            <img src={this.props.img_path} alt="project thumbnail" />
+                            <Image src={this.props.img_path} alt="project thumbnail" layout="fill" objectFit="fill" />
                         </div>
                     </div>
                     {expanded}

@@ -29,7 +29,7 @@ export default function BodySection() {
                         title="CapiHub"
                         language="Typescript"
                         description="A platform where students can share their school work."
-                        img_path="./capihub.png"
+                        img_path="/capihub.png"
                         expanded_content="Built for students by students, CapiHub is a non-profit, free and community driven project born in collaboration with my high school. On this platform, students share their notes and other school material in order to build a powerful archive for future generations."
                         techDetails={[
                             { key: "Tech stack", val: "NodeJS with TypeScript and GraphQL for the backend and  Vue.js for the frontend." },
@@ -41,7 +41,7 @@ export default function BodySection() {
                         title="CHIP-8 Emulator"
                         language="C"
                         description="A simple emulator for the CHIP-8 interpreted programming language."
-                        img_path="./chip.png"
+                        img_path="/chip.png"
                         expanded_content="A simple emulator for the CHIP-8 interpreted programming language written in C (SDL for graphics). The code is meant to be readable and clear, with a lot of comments. My main focus was the architecture, understanding opcodes and how things worked on a very low level."
                         techDetails={[{ key: "Tech stack", val: "C, SDL library for the graphics." }]}
                         github="https://github.com/f0lg0/CHIP-8"
@@ -50,7 +50,7 @@ export default function BodySection() {
                         title="Oncogene"
                         language="Python"
                         description="A Windows/Linux RAT written using TCP sockets."
-                        img_path="./oncogene.png"
+                        img_path="/oncogene.png"
                         expanded_content="A simple RAT written in Python 3 meant for educational/research purposes ONLY. Built for fun, Oncogene was my very first big project. The goal was to get into the cybersecurity world so I thought that making something by myself from scratch was the best way to get my hands dirty."
                         techDetails={[{ key: "Tech stack", val: "Python 3 and related libraries" }]}
                         github="https://github.com/f0lg0/Oncogene"

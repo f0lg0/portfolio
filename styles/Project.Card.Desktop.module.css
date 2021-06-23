@@ -131,6 +131,7 @@
 
     /* don't really like this */
     margin-left: 12px;
+    position: relative;
 }
 
 .thumbnail img {
