@@ -18,7 +18,7 @@ export default function Banner() {
                 </div>
                 <div className={styles.intro_text}>
                     <h1>
-                        I'm <span>f0lg0</span>,
+                        I&apos;m <span>f0lg0</span>,
                     </h1>
                     <p>a self taught software developer.</p>
                 </div>

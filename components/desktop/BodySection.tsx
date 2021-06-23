@@ -11,13 +11,13 @@ export default function BodySection() {
                 <h2>About</h2>
                 <div className={styles.line}></div>
                 <p>
-                    I'm a senior highschool student interested in computer science. My skills range from making websites and related infrastructures to system
-                    programming. I have knowledge in the Linux environment and I like to experiment and study new things every day.
+                    I&apos;m a senior highschool student interested in computer science. My skills range from making websites and related infrastructures to
+                    system programming. I have knowledge in the Linux environment and I like to experiment and study new things every day.
                 </p>
 
                 <p>
-                    I'm based in Italy but I know English quite well thanks to some experience. I normally code alone but I have partecipated in multiple team
-                    projects, some of them are still a work in progress.
+                    I&apos;m based in Italy but I know English quite well thanks to some experience. I normally code alone but I have partecipated in multiple
+                    team projects, some of them are still a work in progress.
                 </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function BodySection() {
                 <div className={styles.line}></div>
 
                 <div className={styles.languages}>
-                    <p>Technologies I've worked with</p>
+                    <p>Technologies I&apos;ve worked with</p>
 
                     <div className={styles.lang_grid}>
                         <div className={styles.lang}>

@@ -13,7 +13,7 @@ export default function Banner() {
                     <div className={styles.text_wrapper}>
                         <div className={styles.title}>
                             <h1>
-                                I'm <span>f0lg0</span>,
+                                I&apos;m <span>f0lg0</span>,
                             </h1>
                         </div>
                         <div className={styles.subtitle}>
