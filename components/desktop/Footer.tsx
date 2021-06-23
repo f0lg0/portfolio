@@ -15,7 +15,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className={styles.react_wrapper}>
-                        <Image src="/react.png" alt="React logo" width={100} height={100} />
+                        <Image src="/react.png" alt="React logo" width={100} height={80} />
                     </div>
                 </div>
             </div>

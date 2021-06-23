@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Head>
                 <title>f0lg0</title>
             </Head>
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </main>
     );
 }
