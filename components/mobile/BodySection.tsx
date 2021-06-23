@@ -23,13 +23,6 @@ export default function BodySection() {
                 <h2>Projects</h2>
 
                 <ProjectCard
-                    title="CapiHub"
-                    language="Typescript"
-                    description="A platform where students can share their school work."
-                    github="https://api.github.com/repos/capihub/capihub"
-                    backup_url="https://github.com/capihub/capihub"
-                />
-                <ProjectCard
                     title="CHIP-8 Emulator"
                     language="C"
                     description="A simple emulator for the CHIP-8 interpreted programming language."
@@ -49,6 +42,27 @@ export default function BodySection() {
                     description="A website to track and analyze Covid-19 in Italy"
                     github="https://api.github.com/repos/f0lg0/stopcovid-website"
                     backup_url="https://github.com/f0lg0/stopcovid-website"
+                />
+                <ProjectCard
+                    title="pyChat"
+                    language="Python"
+                    description="A simple, encrypted and anonymous chat application written using TCP sockets."
+                    github="https://api.github.com/repos/f0lg0/pyChat"
+                    backup_url="https://github.com/f0lg0/pyChat"
+                />
+                <ProjectCard
+                    title="Game Of Life"
+                    language="C"
+                    description="An implementation of the famous Conway's Game of Life in C."
+                    github="https://api.github.com/repos/f0lg0/c-gameoflife"
+                    backup_url="https://github.com/f0lg0/c-gameoflife"
+                />
+                <ProjectCard
+                    title="Personal Portoflio"
+                    language="Typescript"
+                    description="This portfolio, built using Next.js + Typescript and designed by me."
+                    github="https://api.github.com/repos/f0lg0/portfolio"
+                    backup_url="https://github.com/f0lg0/portfolio"
                 />
             </div>
 

@@ -27,18 +27,6 @@ export default function BodySection() {
 
                 <div className={styles.projects_container}>
                     <ProjectCard
-                        title="CapiHub"
-                        language="Typescript"
-                        description="A platform where students can share their school work."
-                        img_path="/capihub.png"
-                        expanded_content="Built for students by students, CapiHub is a non-profit, free and community driven project born in collaboration with my high school. On this platform, students share their notes and other school material in order to build a powerful archive for future generations."
-                        techDetails={[
-                            { key: "Tech stack", val: "NodeJS with TypeScript and GraphQL for the backend and  Vue.js for the frontend." },
-                            { key: "Status", val: "Inactive" },
-                        ]}
-                        github="https://github.com/capihub/"
-                    />
-                    <ProjectCard
                         title="CHIP-8 Emulator"
                         language="C"
                         description="A simple emulator for the CHIP-8 interpreted programming language."
@@ -68,6 +56,33 @@ export default function BodySection() {
                             { key: "Link", val: "https://weekly-covid-stats.vercel.app/#/" },
                         ]}
                         github="https://github.com/f0lg0/stopcovid-website"
+                    />
+                    <ProjectCard
+                        title="pyChat"
+                        language="Python"
+                        description="A simple, encrypted and anonymous chat application written in Pyton using TCP sockets."
+                        img_path="/pychat.png"
+                        expanded_content="pyChat is a simple chat application written using sockets. Messages are custom crafted packets streamed in JSON format and everything encrypted with AES-256. The GUI is built in vanilla HTML/CSS/JS"
+                        techDetails={[{ key: "Tech stack", val: "Python and Eel library for the GUI" }]}
+                        github="https://github.com/f0lg0/pyChat"
+                    />
+                    <ProjectCard
+                        title="Conway's Game of Life"
+                        language="C"
+                        description="An implementation of the famous Game of Life in C."
+                        img_path="/gameoflife.jpg"
+                        expanded_content="As the title suggets, this is Conway's Game of Life implemented in C. To render the world I am using plain normal keyboard characters, no external libraries required. You just need a terminal and a compiler"
+                        techDetails={[{ key: "Tech stack", val: "C, Terminal window" }]}
+                        github="https://github.com/f0lg0/c-gameoflife"
+                    />
+                    <ProjectCard
+                        title="Personal portfolio"
+                        language="Typescript"
+                        description="This portfolio, built using Next.js + Typescript and designed by me."
+                        img_path="/logo.png"
+                        expanded_content="This website was built using Next.js mainly to try out something new. I've picked up React in a couple of days after a year of experience with Vue.js and this is my first product. Deployed to Vercel."
+                        techDetails={[{ key: "Tech stack", val: "Next.js, React and Typescript" }]}
+                        github="https://github.com/f0lg0/portfolio"
                     />
                 </div>
             </div>

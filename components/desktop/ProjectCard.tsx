@@ -78,7 +78,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                     <div className={styles.content_wrapper}>
                         <div className={styles.details}>
                             <h3>{this.props.title}</h3>
-                            <h4 className={this.props.language.toLowerCase()}>{this.props.language}</h4>
+                            <h4 className={styles[this.props.language.toLowerCase()]}>{this.props.language}</h4>
                             <p>{this.props.description}</p>
                         </div>
                         <div className={styles.thumbnail}>
