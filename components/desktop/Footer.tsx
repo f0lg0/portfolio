@@ -1,4 +1,5 @@
 import styles from "../../styles/Footer.Desktop.module.css";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -14,7 +15,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className={styles.react_wrapper}>
-                        <img src="./react.png" alt="React logo" />
+                        <Image src="/react.png" alt="React logo" width={100} height={100} />
                     </div>
                 </div>
             </div>
