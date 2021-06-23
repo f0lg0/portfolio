@@ -1,4 +1,5 @@
 import styles from "../../styles/Banner.Desktop.module.css";
+import Image from "next/image";
 
 function routeToProjects() {
     window.location.href = "/#Projects";
@@ -29,7 +30,9 @@ export default function Banner() {
                     </div>
                 </div>
                 <div className={styles.logo_region}>
-                    <img src="/logo.png" alt="FL LOGO" />
+                    <div className={styles.logo_region_img}>
+                        <Image src="/logo.png" alt="FL LOGO" layout="fill" objectFit="cover" />
+                    </div>
                 </div>
             </div>
         </div>
