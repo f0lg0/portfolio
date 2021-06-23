@@ -145,7 +145,7 @@ export default function BodySection() {
             <div className={styles.contact} id="Contact">
                 <h2>Contact</h2>
 
-                <Link href="mailto:folgonileonardo@gmail.com">
+                <Link href="mailto:folgonileonardo@gmail.com" passHref>
                     <p>folgonileonardo@gmail.com</p>
                 </Link>
             </div>

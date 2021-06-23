@@ -40,7 +40,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
             <div className={styles.navbar_mobile}>
                 <div className={styles.nav_wrapper}>
                     <div className={styles.left_nav}>
-                        <Link href="/">
+                        <Link href="/" passHref>
                             <div className={styles.logo_wrapper}>
                                 <Image src="/logo.png" alt="LF" width={50} height={50} />
                             </div>
@@ -80,13 +80,13 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                                     <p onClick={() => this.navigateTo("About")}>About</p>
                                     <p onClick={() => this.navigateTo("Projects")}>Projects</p>
                                     <p onClick={() => this.navigateTo("Contact")}>Contact</p>
-                                    <Link href="/blog">
+                                    <Link href="/blog" passHref>
                                         <p>Blog</p>
                                     </Link>
                                 </div>
 
                                 <div className={styles.socials}>
-                                    <Link href="https://github.com/f0lg0">
+                                    <Link href="https://github.com/f0lg0" passHref>
                                         <div className={styles.social}>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -99,7 +99,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                                         </div>
                                     </Link>
 
-                                    <Link href="https://twitter.com/f0lg0">
+                                    <Link href="https://twitter.com/f0lg0" passHref>
                                         <div className={styles.social}>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -112,7 +112,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                                         </div>
                                     </Link>
 
-                                    <Link href="mailto:folgonileonardo@gmail.com">
+                                    <Link href="mailto:folgonileonardo@gmail.com" passHref>
                                         <div className={styles.social}>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path

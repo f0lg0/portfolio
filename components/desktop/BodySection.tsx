@@ -174,7 +174,7 @@ export default function BodySection() {
                 <h2>Contact</h2>
                 <div className={styles.line}></div>
 
-                <Link href="mailto:folgonileonardo@gmail.com">
+                <Link href="mailto:folgonileonardo@gmail.com" passHref>
                     <p>folgonileonardo@gmail.com</p>
                 </Link>
             </div>
