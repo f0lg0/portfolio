@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../../styles/Navbar.Mobile.module.css";
 
@@ -41,7 +42,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                     <div className={styles.left_nav}>
                         <Link href="/">
                             <div className={styles.logo_wrapper}>
-                                <img src="/logo.png" alt="LF" />
+                                <Image src="/logo.png" alt="LF" width={50} height={50} />
                             </div>
                         </Link>
                     </div>
