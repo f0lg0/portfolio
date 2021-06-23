@@ -12,6 +12,7 @@
     top: 0;
 
     background-color: var(--secondary-color);
+    z-index: 100;
 }
 
 .main_text {
