@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <div className={styles.navbar}>
             <div className={styles.main_text}>
-                <Link href="/">
+                <Link href="/" passHref>
                     <p>
                         <span>Folgoni</span> Leonardo
                     </p>
