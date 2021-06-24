@@ -59,7 +59,8 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .links a {
+    .links a,
+    .social .name a {
         font-size: 16px;
     }
 }
@@ -100,7 +101,7 @@
     align-items: center;
     flex: 0.2;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 40px;
     flex-grow: 1;
 }
 
@@ -117,10 +118,19 @@
 .social .name a {
     text-decoration: none;
     color: var(--main-font-color);
+    font-size: 17px;
 }
 .social .name a:hover {
     color: var(--accent-color);
     transition: 0.3s;
+}
+@media only screen and (max-width: 950px) {
+    .social {
+        margin-right: 30px;
+    }
+    .social .name a {
+        font-size: 16px;
+    }
 }
 .email {
     display: flex;
