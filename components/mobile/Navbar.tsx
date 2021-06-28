@@ -47,7 +47,6 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
                         </Link>
                     </div>
                     <div className={styles.right_nav}>
-                        <div className={styles.spacer_chrome}></div>
                         <div className={styles.burger_menu} onClick={this.toggleBurger}>
                             <div className={styles.bline}></div>
                             <div className={styles.bline}></div>

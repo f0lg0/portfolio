@@ -49,7 +49,7 @@
 }
 
 .left_nav {
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .logo_wrapper {
@@ -62,12 +62,7 @@
 .right_nav {
     display: flex;
     align-items: center;
-    justify-content: right;
-}
-
-/* fuck chrome */
-.spacer_chrome {
-    width: calc(100% - 50px);
+    justify-content: flex-end;
 }
 
 .burger_menu {

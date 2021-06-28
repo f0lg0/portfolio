@@ -1,8 +1,8 @@
 import styles from "../../styles/Banner.Desktop.module.css";
 import Image from "next/image";
 
-function routeToProjects() {
-    window.location.href = "/#Projects";
+function routeDown() {
+    window.location.href = "/#About";
 }
 
 export default function Banner() {
@@ -24,8 +24,8 @@ export default function Banner() {
                         <div className={styles.small_text}>
                             <p>Stick around to see my work</p>
                         </div>
-                        <div className={styles.main_btn} onClick={routeToProjects}>
-                            <p>See my work</p>
+                        <div className={styles.main_btn} onClick={routeDown}>
+                            <p>About me</p>
                         </div>
                     </div>
                 </div>
