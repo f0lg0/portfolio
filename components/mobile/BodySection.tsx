@@ -23,6 +23,13 @@ export default function BodySection() {
                 <h2>Projects</h2>
 
                 <ProjectCard
+                    title="Kademlia DHT"
+                    language="Rust"
+                    description="Simple implementation of the Kademlia DHT protocol in Rust with state dumping features."
+                    github="https://api.github.com/repos/f0lg0/kademlia-dht"
+                    backup_url="https://github.com/f0lg0/kademlia-dht"
+                />
+                <ProjectCard
                     title="CHIP-8 Emulator"
                     language="C"
                     description="A simple emulator for the CHIP-8 interpreted programming language."

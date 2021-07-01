@@ -27,6 +27,15 @@ export default function BodySection() {
 
                 <div className={styles.projects_container}>
                     <ProjectCard
+                        title="Kademlia DHT"
+                        language="Rust"
+                        description="Simple implementation of the Kademlia DHT protocol in Rust with state dumping features."
+                        img_path="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F20%2FChord_network.png&f=1&nofb=1"
+                        expanded_content="Implementation of the distributed hash table 'Kademlia' in Rust, with features to graphically dump the internal state of a network node. Kademlia is a distributed hash table for decentralized peer-to-peer computer networks, it specifies the structure of the network and the exchange of information through node lookups."
+                        techDetails={[{ key: "Language", val: "Rust" }]}
+                        github="https://github.com/f0lg0/kademlia-dht"
+                    />
+                    <ProjectCard
                         title="CHIP-8 Emulator"
                         language="C"
                         description="A simple emulator for the CHIP-8 interpreted programming language."
