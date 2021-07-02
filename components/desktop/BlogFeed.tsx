@@ -49,8 +49,8 @@ export default function BlogFeed({ posts }: BlogProps) {
                 <div className={styles.articles}>
                     {posts.map((post, index) => {
                         return (
-                            <div className={styles.grid_element}>
-                                <Link href={`/blog/${post.slug}`} key={index}>
+                            <div className={styles.grid_element} key={index}>
+                                <Link href={`/blog/${post.slug}`}>
                                     <div className={styles.article}>
                                         <div className={styles.thumbnail}>
                                             <Image src={post.frontmatter.cover_image} layout="fill" objectFit="fill" />
