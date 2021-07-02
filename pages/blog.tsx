@@ -73,7 +73,6 @@ class Blog extends React.Component<BlogProps, BlogState> {
     render() {
         const tmp = {
             marginTop: "150px",
-            textAlign: "center",
             color: "var(--accent-color)",
         };
         return (
