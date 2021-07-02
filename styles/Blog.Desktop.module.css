@@ -33,6 +33,15 @@
 
     border-radius: 12px;
     cursor: pointer;
+
+    transition: 1s ease;
+}
+
+.article_wrapper:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .cover_image {
@@ -150,6 +159,14 @@
     margin: 15px;
 
     cursor: pointer;
+    transition: 1s ease;
+}
+
+.article:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .thumbnail {
