@@ -37,7 +37,7 @@ export default function ArticlePage(article: ArticlePageProps) {
                 </div>
             </div>
 
-            <div className="content">
+            <div className={styles.content}>
                 <div dangerouslySetInnerHTML={{ __html: marked(article.content) }}></div>
             </div>
         </div>

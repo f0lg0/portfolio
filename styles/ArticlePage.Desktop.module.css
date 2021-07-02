@@ -42,3 +42,70 @@
 .excerpt p {
     color: var(--main-font-color);
 }
+
+.content {
+    width: 100%;
+    margin-top: 80px;
+
+    text-align: justify;
+}
+
+.content p {
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: 300;
+    color: var(--main-font-color);
+}
+
+.content img {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content a {
+    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+.content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.content code {
+    background-color: #2e2e2e;
+    font-size: 18px;
+}
+
+.content ul {
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.content li {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content ul li::before {
+    content: "\2022";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.content span {
+    color: var(--accent-color);
+}
+
+.content pre {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
