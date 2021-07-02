@@ -71,13 +71,26 @@ class Blog extends React.Component<BlogProps, BlogState> {
     }
 
     render() {
+        const tmp = {
+            marginTop: "150px",
+            textAlign: "center",
+            color: "var(--accent-color)",
+        };
         return (
             <div className={styles.main}>
                 <div className={styles.blog_title}>
                     <Image src={BlogLogo} alt="THE BLOG" />
                 </div>
 
-                {this.state.isMobile ? <div></div> : <DesktopFeed posts={this.props.posts} />}
+                {this.state.isMobile ? (
+                    <div>
+                        <h3 style={tmp}>
+                            Feed not available in mobile. <br></br>Coming soon!
+                        </h3>
+                    </div>
+                ) : (
+                    <DesktopFeed posts={this.props.posts} />
+                )}
             </div>
         );
     }

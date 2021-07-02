@@ -19,6 +19,7 @@
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 70px;
+    text-align: left;
 }
 
 .excerpt {
@@ -72,6 +73,7 @@
 .content h2 {
     font-size: 45px;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .content code {
@@ -84,6 +86,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
     list-style: none;
+
+    text-align: left;
 }
 
 .content li {
@@ -108,4 +112,34 @@
     font-size: 14px;
     margin-top: 25px;
     margin-bottom: 25px;
+
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .metadata h1 {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .metadata h1 {
+        font-size: 52px;
+    }
+    .article_body {
+        width: 90%;
+    }
+    .excerpt {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .metadata h1 {
+        font-size: 35px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
 }
