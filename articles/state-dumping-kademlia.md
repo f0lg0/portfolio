@@ -77,7 +77,7 @@ let json = serde_json::json!({
 });
 </pre>
 
-As you can see the data displayed is pretty simple, nothing fancy, just some IP addresses and IDs. The important thing though is that now we have a window to the program. We can dump data whenever we want in the code so we can take a better look at what's going on.
+As you can see the data displayed is pretty simple, nothing fancy, just some IP addresses and IDs. The important thing though is that now we have a window on the program. We can dump data whenever we want in the code so we can take a better look at what's going on.
 
 <br>
 
