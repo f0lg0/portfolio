@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import React from "react";
 
-import styles from "../styles/Blog.module.css";
+import styles from "../styles/Blog.General.module.css";
 import BlogLogo from "../public/theblog.svg";
 import Image from "next/image";
 
