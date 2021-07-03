@@ -1,0 +1,90 @@
+.wrapper {
+    width: 100%;
+    width: auto;
+
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+
+.articles {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article {
+    width: 100%;
+
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+
+    border: 1px solid rgba(185, 185, 185, 0.3);
+    transition: 1s ease;
+
+    margin-bottom: 25px;
+}
+
+.article:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.text {
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+}
+
+.text > * {
+    margin: 10px;
+}
+
+.text .article_date {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.text .article_desc {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 14px;
+
+    color: var(--soft-text);
+}
+
+.desc_wrapper {
+    position: relative;
+}
+
+.desc {
+    position: relative;
+    overflow: hidden;
+    max-height: 120px;
+}
+
+.fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 20%, var(--secondary-color) 90%);
+}
+.preserve_text {
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+    font-family: "Poppins", sans-serif;
+    color: var(--soft-text);
+    line-height: 30px;
+}
