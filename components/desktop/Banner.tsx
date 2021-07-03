@@ -18,7 +18,7 @@ export default function Banner() {
                         </div>
                         <div className={styles.subtitle}>
                             <h2>
-                                a self-taught <span>software developer</span>
+                                an aspiring <span>software developer</span>
                             </h2>
                         </div>
                         <div className={styles.small_text}>

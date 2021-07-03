@@ -20,7 +20,7 @@ export default function Banner() {
                     <h1>
                         I&apos;m <span>f0lg0</span>,
                     </h1>
-                    <p>a self taught software developer.</p>
+                    <p>an aspiring software developer.</p>
                 </div>
 
                 <div className={styles.arrow_wrapper}>
