@@ -93,22 +93,41 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                             this.setState({ expanded: !this.state.expanded });
                         }}
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="22"
-                            height="22"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2"
-                            stroke="#f2f2f2"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="18" y1="13" x2="12" y2="19" />
-                            <line x1="6" y1="13" x2="12" y2="19" />
-                        </svg>
+                        {this.state.expanded ? (
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#ffffff"
+                                fill="none"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <line x1="18" y1="11" x2="12" y2="5" />
+                                <line x1="6" y1="11" x2="12" y2="5" />
+                            </svg>
+                        ) : (
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                strokeWidth="2"
+                                stroke="#f2f2f2"
+                                fill="none"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <line x1="18" y1="13" x2="12" y2="19" />
+                                <line x1="6" y1="13" x2="12" y2="19" />
+                            </svg>
+                        )}
                     </div>
                 </div>
             </div>

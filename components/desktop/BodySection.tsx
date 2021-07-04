@@ -7,7 +7,8 @@ import Image from "next/image";
 export default function BodySection() {
     return (
         <div className={styles.body_section}>
-            <div className={styles.about_section} id="About">
+            <span id="About"></span>
+            <div className={styles.about_section}>
                 <h2>About</h2>
                 <div className={styles.line}></div>
                 <p>
@@ -21,7 +22,8 @@ export default function BodySection() {
                 </p>
             </div>
 
-            <div className={styles.projects_section} id="Projects">
+            <div className={styles.projects_section}>
+                <span id="Projects" style={{ paddingTop: "80px" }}></span>
                 <h2>Projects</h2>
                 <div className={styles.line}></div>
 

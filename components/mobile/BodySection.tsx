@@ -7,7 +7,8 @@ import Image from "next/image";
 export default function BodySection() {
     return (
         <div className={styles.body_mobile}>
-            <div className={styles.about_section} id="About">
+            <span id="About" style={{ paddingTop: "100px" }}></span>
+            <div className={styles.about_section}>
                 <h2>About</h2>
                 <p>
                     I&apos;m a senior highschool student interested in computer science. My skills range from making websites and related infrastructures to
@@ -19,7 +20,9 @@ export default function BodySection() {
                     team projects, some of them are still a work in progress.
                 </p>
             </div>
-            <div className={styles.projects_container_mobile} id="Projects">
+
+            <span id="Projects" style={{ paddingTop: "100px" }}></span>
+            <div className={styles.projects_container_mobile}>
                 <h2>Projects</h2>
 
                 <ProjectCard
