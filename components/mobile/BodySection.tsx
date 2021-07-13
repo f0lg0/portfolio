@@ -47,6 +47,13 @@ export default function BodySection() {
                     backup_url="https://github.com/f0lg0/Oncogene"
                 />
                 <ProjectCard
+                    title="6502 Emulator"
+                    language="C"
+                    description="A minimal 6502 microprocessor emulator."
+                    github="https://api.github.com/repos/f0lg0/6502"
+                    backup_url="https://github.com/f0lg0/6502"
+                />
+                <ProjectCard
                     title="StopCovid"
                     language="VueJS"
                     description="A website to track and analyze Covid-19 in Italy"

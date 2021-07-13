@@ -56,6 +56,15 @@ export default function BodySection() {
                         github="https://github.com/f0lg0/Oncogene"
                     />
                     <ProjectCard
+                        title="6502 Emulator"
+                        language="C"
+                        description="A minimal 6502 microprocessor emulator."
+                        img_path="/6502.png"
+                        expanded_content="A minimal, single-stepped and beginner friendly 6502 emulator written in C using ncurses for graphics. This main goal of this project is to understand how CPUs works by directly emulating one and to debug it by single stepping instructions. The code is meant to be readable and understandable."
+                        techDetails={[{ key: "Tech stack", val: "C, ncurses library for the graphics." }]}
+                        github="https://github.com/f0lg0/6502"
+                    />
+                    <ProjectCard
                         title="StopCovid"
                         language="VueJS"
                         description="A website to track and analyze Covid-19 in Italy"
