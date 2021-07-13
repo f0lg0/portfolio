@@ -24,7 +24,7 @@ export default function BlogFeed({ posts }: BlogProps) {
             <div className={styles.articles}>
                 {posts.map((post, index) => {
                     return (
-                        <Link href={`/blog/${post.slug}`} key={index}>
+                        <Link href={`/blog/${post.slug}`} key={index} passHref>
                             <div className={styles.article}>
                                 <div className={styles.text}>
                                     <p className={styles.article_date}>{post.frontmatter.date}</p>

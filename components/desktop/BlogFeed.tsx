@@ -50,10 +50,10 @@ export default function BlogFeed({ posts }: BlogProps) {
                     {posts.map((post, index) => {
                         return (
                             <div className={styles.grid_element} key={index}>
-                                <Link href={`/blog/${post.slug}`}>
+                                <Link href={`/blog/${post.slug}`} passHref>
                                     <div className={styles.article}>
                                         <div className={styles.thumbnail}>
-                                            <Image src={post.frontmatter.cover_image} layout="fill" objectFit="fill" />
+                                            <Image src={post.frontmatter.cover_image} layout="fill" objectFit="fill" alt="article thumbnail" />
                                         </div>
                                         <div className={styles.text}>
                                             <p className={styles.article_date}>{post.frontmatter.date}</p>
