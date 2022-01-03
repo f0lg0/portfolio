@@ -1,5 +1,5 @@
 import styles from "../../styles/Blog.Desktop.module.css";
-import Image from "next/image";
+
 import Link from "next/link";
 
 interface ArticleFrontmatter {
@@ -26,7 +26,7 @@ export default function BlogFeed({ posts }: BlogProps) {
                 <Link href={`/blog/${posts[0].slug}`} passHref>
                     <div className={styles.article_wrapper}>
                         <div className={styles.cover_image}>
-                            <Image src={posts[0].frontmatter.cover_image} alt="Thumbnail" objectFit="fill" layout="fill" />
+                            <img src={posts[0].frontmatter.cover_image} alt="Thumbnail" />
                         </div>
                         <div className={styles.main_article_details}>
                             <h3>{posts[0].frontmatter.title}</h3>
@@ -53,7 +53,7 @@ export default function BlogFeed({ posts }: BlogProps) {
                                 <Link href={`/blog/${post.slug}`} passHref>
                                     <div className={styles.article}>
                                         <div className={styles.thumbnail}>
-                                            <Image src={post.frontmatter.cover_image} layout="fill" objectFit="fill" alt="article thumbnail" />
+                                            <img src={post.frontmatter.cover_image} alt="article thumbnail" />
                                         </div>
                                         <div className={styles.text}>
                                             <p className={styles.article_date}>{post.frontmatter.date}</p>

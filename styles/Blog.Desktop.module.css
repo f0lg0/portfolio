@@ -50,8 +50,10 @@
     position: relative;
 }
 
-.cover_image > div > img {
+.cover_image > img {
     border-radius: 8px;
+    width: 100%;
+    height: 100%;
 }
 
 .main_article_details {
@@ -177,6 +179,11 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
 }
 
 .text {

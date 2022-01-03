@@ -1,5 +1,4 @@
 import styles from "../../styles/Banner.Desktop.module.css";
-import Image from "next/image";
 
 function routeDown() {
     window.location.href = "/#About";
@@ -31,7 +30,7 @@ export default function Banner() {
                 </div>
                 <div className={styles.logo_region}>
                     <div className={styles.logo_region_img}>
-                        <Image src="/logo.png" alt="FL LOGO" layout="fill" objectFit="cover" />
+                        <img src="/logo.png" alt="FL LOGO" />
                     </div>
                 </div>
             </div>

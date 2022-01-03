@@ -98,6 +98,11 @@
     position: relative;
 }
 
+.lang img {
+    width: 100%;
+    height: 100%;
+}
+
 .contact {
     margin-top: 180px;
     max-width: 600px;

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/Project.Card.Desktop.module.css";
-import Image from "next/image";
 
 type TechDetailsObject = {
     key: string;
@@ -56,7 +55,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                     <div className={styles.github_container}>
                         <div className={styles.github_wrapper}>
                             <a href={this.props.github} target="_blank" rel="noopener noreferrer">
-                                <Image src="/github_logo_64.png" alt="github logo" width={64} height={64} />
+                                <img src="/github_logo_64.png" alt="github logo" width={64} height={64} />
                             </a>
                         </div>
                     </div>
@@ -82,7 +81,7 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                             <p>{this.props.description}</p>
                         </div>
                         <div className={styles.thumbnail}>
-                            <Image src={this.props.img_path} alt="project thumbnail" layout="fill" objectFit="fill" />
+                            <img src={this.props.img_path} alt="project thumbnail" />
                         </div>
                     </div>
                     {expanded}

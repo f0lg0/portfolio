@@ -1,5 +1,5 @@
 import styles from "../../styles/Blog.Mobile.module.css";
-import Image from "next/image";
+
 import Link from "next/link";
 
 interface ArticleFrontmatter {

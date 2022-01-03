@@ -61,6 +61,11 @@
     position: relative;
 }
 
+.skill img {
+    width: 100%;
+    height: 100%;
+}
+
 .contact {
     margin: auto;
     margin-top: 150px;
