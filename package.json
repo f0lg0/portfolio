@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prod": "next export"
+    "prod": "next export",
+    "static": "next build && next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
