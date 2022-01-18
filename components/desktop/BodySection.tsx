@@ -56,6 +56,15 @@ export default function BodySection() {
                         github="https://github.com/f0lg0/Oncogene"
                     />
                     <ProjectCard
+                        title="TCP Server"
+                        language="C++"
+                        description=" Boilerplate of a TCP Server written in C++ using the epoll API "
+                        img_path="https://github.com/f0lg0/tcp-server-boilerplate/raw/main/assets/server.png"
+                        expanded_content="Boilerplate of a multi-concurrent-connections TCP Server in order to speed up development of network applications in C/C++"
+                        techDetails={[{ key: "Tech stack", val: "C++, epoll API" }]}
+                        github="https://github.com/f0lg0/tcp-server-boilerplate"
+                    />
+                    <ProjectCard
                         title="6502 Emulator"
                         language="C"
                         description="A minimal 6502 microprocessor emulator."

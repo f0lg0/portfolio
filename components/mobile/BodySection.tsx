@@ -54,6 +54,13 @@ export default function BodySection() {
                     backup_url="https://github.com/f0lg0/6502"
                 />
                 <ProjectCard
+                    title="TCP Sever Boilerplate"
+                    language="C++"
+                    description="Boilerplate of a TCP Server written in C++ using the epoll API "
+                    github="https://api.github.com/repos/f0lg0/tcp-server-boilerplate"
+                    backup_url="https://github.com/f0lg0/tcp-server-boilerplate"
+                />
+                <ProjectCard
                     title="StopCovid"
                     language="VueJS"
                     description="A website to track and analyze Covid-19 in Italy"
