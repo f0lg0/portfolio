@@ -47,25 +47,27 @@ class ProjectCard extends React.Component<ProjectCardProps, ProjectCardState> {
                         <p className={styles.language}>{this.props.language.toUpperCase()}</p>
                         <h1 className={styles.title}>{this.props.title}</h1>
                         <p className={styles.description}>{this.props.description}</p>
-                        <div className={styles.github_stars}>
-                            <div className={styles.icon}>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1"
-                                    stroke="#ffffff"
-                                    fill="#ffffff"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                </svg>
+                        {this.props.github ? (
+                            <div className={styles.github_stars}>
+                                <div className={styles.icon}>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth="1"
+                                        stroke="#ffffff"
+                                        fill="#ffffff"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                    </svg>
+                                </div>
+                                <p className={styles.amt}>{this.state.stars}</p>
                             </div>
-                            <p className={styles.amt}>{this.state.stars}</p>
-                        </div>
+                        ) : null}
                     </div>
                 </div>
             </a>

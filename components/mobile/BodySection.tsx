@@ -26,6 +26,13 @@ export default function BodySection() {
                 <h2>Projects</h2>
 
                 <ProjectCard
+                    title="Russo-Ukrainian War Archive"
+                    language="HTML/CSS/JS"
+                    description="Blog/archive to preserve important bits of the ongoing conflict"
+                    github={undefined}
+                    backup_url="https://ruwararchive-f0lg0.vercel.app/"
+                />
+                <ProjectCard
                     title="Kademlia DHT"
                     language="Rust"
                     description="Simple implementation of the Kademlia DHT protocol in Rust with state dumping features."

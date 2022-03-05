@@ -29,6 +29,18 @@ export default function BodySection() {
 
                 <div className={styles.projects_container}>
                     <ProjectCard
+                        title="Russo-Ukrainian War Archive"
+                        language="HTML/CSS/JS"
+                        description="Blog/archive to preserve important bits of the ongoing conflict"
+                        img_path="https://ruwararchive-f0lg0.vercel.app/media/favicon.png"
+                        expanded_content="A project born to document, store and provide content related to the Russo-Ukrainian conflict. Disturbing footage is also included"
+                        techDetails={[
+                            { key: "Language", val: "HTML, CSS and vanilla JS" },
+                            { key: "Link", val: "https://ruwararchive-f0lg0.vercel.app/" },
+                        ]}
+                        github={undefined}
+                    />
+                    <ProjectCard
                         title="Kademlia DHT"
                         language="Rust"
                         description="Simple implementation of the Kademlia DHT protocol in Rust with state dumping features."
