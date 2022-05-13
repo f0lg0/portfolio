@@ -25,3 +25,7 @@ html {
     color: var(--main-color);
     background-color: var(--main-font-color);
 }
+
+a {
+    color: var(--main-font-color) !important;
+}

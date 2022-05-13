@@ -8,6 +8,7 @@ module.exports = {
             "upload.wikimedia.org",
             "github.com",
             "ruwararchive-f0lg0.vercel.app",
+            "devsbunker.com",
         ],
     },
 };

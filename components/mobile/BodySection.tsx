@@ -26,6 +26,13 @@ export default function BodySection() {
                 <h2>Projects</h2>
 
                 <ProjectCard
+                    title="devsBunker"
+                    language="Javascript"
+                    description="Devsbunker provides developers a way to share and advertise their work in a free and easy way."
+                    github={undefined}
+                    backup_url="https://devsbunker.com"
+                />
+                <ProjectCard
                     title="Russo-Ukrainian War Archive"
                     language="HTML/CSS/JS"
                     description="Blog/archive to preserve important bits of the ongoing conflict"

@@ -46,7 +46,18 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                 for (let i = 0; i < this.props.techDetails.length; i++) {
                     techDetails.push(
                         <p>
-                            <span>{this.props.techDetails[i].key}:</span> {this.props.techDetails[i].val}
+                            <span>{this.props.techDetails[i].key}:</span>{" "}
+                            {/http/.test(this.props.techDetails[i].val) ? (
+                                <a
+                                    href={this.props.techDetails[i].val}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {this.props.techDetails[i].val}
+                                </a>
+                            ) : (
+                                this.props.techDetails[i].val
+                            )}
                         </p>
                     );
                 }
@@ -55,8 +66,17 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                 githubLink = (
                     <div className={styles.github_container}>
                         <div className={styles.github_wrapper}>
-                            <a href={this.props.github} target="_blank" rel="noopener noreferrer">
-                                <Image src="/github_logo_64.png" alt="github logo" width={64} height={64} />
+                            <a
+                                href={this.props.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src="/github_logo_64.png"
+                                    alt="github logo"
+                                    width={64}
+                                    height={64}
+                                />
                             </a>
                         </div>
                     </div>
@@ -72,17 +92,35 @@ class ProjectCard extends React.Component<CardProps, CardState> {
             );
         }
         return (
-            <div className={this.state.expanded ? card_styles_expanded_true : card_styles_expanded_false} ref={this.cardRef}>
+            <div
+                className={
+                    this.state.expanded
+                        ? card_styles_expanded_true
+                        : card_styles_expanded_false
+                }
+                ref={this.cardRef}
+            >
                 <div className={styles.frame}>
                     <div className={styles.spacer}></div>
                     <div className={styles.content_wrapper}>
                         <div className={styles.details}>
                             <h3>{this.props.title}</h3>
-                            <h4 className={styles[this.props.language.toLowerCase()]}>{this.props.language}</h4>
+                            <h4
+                                className={
+                                    styles[this.props.language.toLowerCase()]
+                                }
+                            >
+                                {this.props.language}
+                            </h4>
                             <p>{this.props.description}</p>
                         </div>
                         <div className={styles.thumbnail}>
-                            <Image src={this.props.img_path} alt="project thumbnail" layout="fill" objectFit="fill" />
+                            <Image
+                                src={this.props.img_path}
+                                alt="project thumbnail"
+                                layout="fill"
+                                objectFit="fill"
+                            />
                         </div>
                     </div>
                     {expanded}
@@ -105,7 +143,11 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
                                 <line x1="12" y1="5" x2="12" y2="19" />
                                 <line x1="18" y1="11" x2="12" y2="5" />
                                 <line x1="6" y1="11" x2="12" y2="5" />
@@ -122,7 +164,11 @@ class ProjectCard extends React.Component<CardProps, CardState> {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
                                 <line x1="12" y1="5" x2="12" y2="19" />
                                 <line x1="18" y1="13" x2="12" y2="19" />
                                 <line x1="6" y1="13" x2="12" y2="19" />

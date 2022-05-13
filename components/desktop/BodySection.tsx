@@ -29,6 +29,18 @@ export default function BodySection() {
 
                 <div className={styles.projects_container}>
                     <ProjectCard
+                        title="devsBunker"
+                        language="Javascript"
+                        description="A platform where developers can promote their work for free."
+                        img_path="https://devsbunker.com/img/LOGO.a1787424.svg"
+                        expanded_content="Devsbunker provides developers a way to share and advertise their work in a free and easy way. While it is mainly designed for software developers, it's certainly not limited to that."
+                        techDetails={[
+                            { key: "Tech stack", val: "Node.js, Vue.js, GraphQL, MongoDB" },
+                            { key: "Link", val: "https://devsbunker.com" },
+                        ]}
+                        github="https://github.com/fb-co/devsBunker"
+                    />
+                    <ProjectCard
                         title="Russo-Ukrainian War Archive"
                         language="HTML/CSS/JS"
                         description="Blog/archive to preserve important bits of the ongoing conflict"
